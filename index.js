@@ -11,6 +11,12 @@ const DOB = "19082004";
 const EMAIL = "puneethkondarasi198@gmail.com";
 const ROLL_NUMBER = "22BCE3418";
 
+app.get("/bfhl", (req, res) => {
+    res.json({
+        message: "Server is running"
+    });
+});
+
 app.post("/bfhl", (req, res) => {
   try {
     const data = req.body.data;
